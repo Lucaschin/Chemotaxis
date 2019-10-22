@@ -3,7 +3,7 @@ void setup()
 {     
   size(500, 500);
   frameRate(50);
-  bob = new Bacteria[200];
+  bob = new Bacteria[300];
   for (int i =0; i<bob.length; i++)
   {
     bob[i] = new Bacteria();
