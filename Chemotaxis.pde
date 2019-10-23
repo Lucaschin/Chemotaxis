@@ -41,6 +41,11 @@ class Bacteria
       myX = 500;
       myY = 500;
     }
+    if(get(mouseX,mouseY)!= color(0)){
+    	fill(0);
+    	stroke(0);
+    }
+    
     int meow = (int)(Math.random()*4);
     if(meow == 0){
       myX = myX+8;
@@ -56,7 +61,7 @@ class Bacteria
   }
   void show()
   {
-    ellipse(myX, myY, 8, 8);
+    rect(myX, myY, 5, 5);
     fill(myColor);
     stroke(myColor);
     
